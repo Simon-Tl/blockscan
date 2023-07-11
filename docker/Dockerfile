@@ -4,8 +4,9 @@ WORKDIR /app
 
 COPY ../dev.env ./.env
 
-RUN RUN export $(cat ./.env | xargs) \
-    apk --no-cache --update add alpine-sdk gmp-dev automake libtool inotify-tools autoconf python3 file qemu-x86_64 
+RUN apk --no-cache --update add alpine-sdk gmp-dev automake libtool inotify-tools autoconf python3 file qemu-x86_64  \
+    export $(cat ./.env | xargs) 
+    
 
 ENV GLIBC_REPO=https://github.com/sgerrand/alpine-pkg-glibc \
     GLIBC_VERSION=2.30-r0 \
