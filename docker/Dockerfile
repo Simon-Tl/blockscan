@@ -23,9 +23,9 @@ ENV GLIBC_REPO=https://github.com/sgerrand/alpine-pkg-glibc \
     ADMIN_PANEL_ENABLED="" \
     RELEASE_VERSION=5.1.4 \
     ETHEREUM_JSONRPC_VARIANT=${ETHEREUM_JSONRPC_VARIANT:-geth} \
-    ETHEREUM_JSONRPC_HTTP_URL=${ETHEREUM_JSONRPC_HTTP_URL:-http://localhost:8000} \
-    ETHEREUM_JSONRPC_TRACE_URL=${ETHEREUM_JSONRPC_TRACE_URL:-http://localhost:8000} \
-    DATABASE_URL=${DATABASE_URL:-postgresql://postgres:postgres123@db:5432/blockscan?ssl=false} \
+    ETHEREUM_JSONRPC_HTTP_URL=${ETHEREUM_JSONRPC_HTTP_URL:-http://axon1:8000} \
+    ETHEREUM_JSONRPC_TRACE_URL=${ETHEREUM_JSONRPC_TRACE_URL:-http://axon1:8000} \
+    DATABASE_URL=${DATABASE_URL:-postgresql://postgres:postgres123@postgres:5432/blockscan?ssl=false} \
     NETWORK=${NETWORK:-Axon} \
     SUBNETWORK=${SUBNETWORK:-AxonChain} \
     LOGO=${LOGO:-/images/blockscout_logo.svg} \
