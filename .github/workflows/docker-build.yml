@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - docker-compose  
+      - kubernetes
   workflow_dispatch:
 
 env:
