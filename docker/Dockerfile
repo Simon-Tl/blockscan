@@ -8,9 +8,9 @@ RUN export $(cat ./.env | xargs)
 
 ENV GLIBC_REPO=https://github.com/sgerrand/alpine-pkg-glibc \
     GLIBC_VERSION=2.30-r0 \
-    PORT=4000 \
-    MIX_ENV="prod" \
-    SECRET_KEY_BASE="RMgI4C1HSkxsEjdhtGMfwAHfyT6CKWXOgzCboJflfSm4jeAlic52io05KB6mqzc5" \
+    # PORT=4000 \
+    # MIX_ENV="prod" \
+    # SECRET_KEY_BASE="RMgI4C1HSkxsEjdhtGMfwAHfyT6CKWXOgzCboJflfSm4jeAlic52io05KB6mqzc5" \
     COIN="" \
     CACHE_EXCHANGE_RATES_PERIOD="" \
     API_V1_READ_METHODS_DISABLED="false" \
