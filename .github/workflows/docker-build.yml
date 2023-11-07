@@ -1,8 +1,9 @@
 name: Build Docker And Push
+
 on:
   push:
     branches: ['main', '*5*', '*dev*']
-    tags:
+    tags: 
   workflow_dispatch:
     inputs:
       commit_sha:
